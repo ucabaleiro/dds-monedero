@@ -19,14 +19,16 @@ Tenés seis tareas:
  5. :arrow_up: Subí todos los cambios a tu _fork_
  6. :bug: Activá los issues de Github desde https://github.com/TU_GITHUB_USERNAME/dds-monedero-java8/settings así podemos darte nuestras devoluciones
 
-### Tecnologías usadas
+### Solucion. Code smells encontrados y corregidos:
+1. Long method sacar() y poner().
+2. Duplicated code en sacar() y poner().
+3. Type test en calcularValor().
+4. Temporary field en esDeposito.
+5. Long parameter list en agregarMovimiento().
+6. Dead code en setMovimientos().
 
-* Java 8.
-* JUnit 5. :warning: La versión 5 de JUnit es la más nueva del framework y presenta algunas diferencias respecto a la versión "clásica" (JUnit 4). Para mayores detalles, ver:
-    *  [Apunte de herramientas](https://docs.google.com/document/d/1VYBey56M0UU6C0689hAClAvF9ILE6E7nKIuOqrRJnWQ/edit#heading=h.dnwhvummp994)
-    *  [Entrada de Blog (en inglés)](https://www.baeldung.com/junit-5-migration)
-    *  [Entrada de Blog (en español)](https://www.paradigmadigital.com/dev/nos-espera-junit-5/)
-* Maven 3.3 o superior
+### Observaciones:
+1. fueDepositado() y fueExtraido() son dead code pero no fueron eliminados porque serian funcionales a resolver el problerma de getMontoExtraidoA() que no tiene en cuenta la fecha en el filter.
  
 
   
